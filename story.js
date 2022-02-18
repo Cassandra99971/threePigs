@@ -24,6 +24,12 @@ function checkAnswers(answer) {
     case "Give up":
       giveUp();
       break;
+    case "Funeral":
+      funeral();
+      break;
+    case "The End":
+      theEnd();
+      break;
     }
 }
 
@@ -61,6 +67,22 @@ function chimney(){
   story("The wolf went up on the roof and tried to get into the house through the chimney. He climbed into the chimney and slid down into a pot of boiling water. He ran out of the house and never came back!");
   choices = ["The End"];
   answer = setOptions(choices);
+  }
+
+function giveUp(){
+  story("The wolf forgot his asthma inhaler so he had to go home.");
+  choices = ["The End"];
+  answer = setOptions(choices);
+  }
+
+function funeral(){
+  story("You go to the funeral of the pig.  The funeral is very sad.  You spend so much time at the funeral that you don't learn how the smart pig defeated the wolf.  Hopefully you won't be in a similar situation one day!");
+  choices = ["The End"];
+  answer = setOptions(choices);
+  }
+
+function theEnd(){
+  story("The end! Remember: Work hard, be smart, and always carry an inhaler.");
   }
 
 // Places
