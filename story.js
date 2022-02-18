@@ -18,6 +18,12 @@ function checkAnswers(answer) {
     case "Taunt the wolf":
       tauntWolf();
       break;
+    case "Try the chimney":
+      chimney();
+      break;
+    case "Give up":
+      giveUp();
+      break;
     }
 }
 
@@ -48,6 +54,12 @@ function smartPig(){
 function tauntWolf(){
   story("The pig replied,\"Not by the hairs on my chinny chin chin!\" The wolf replied,\"Then I'll huff and I'll puff and I'll blow your house in!\" The wolf huffed and puffed.<br>But the house did not fall down. The wolf smoked too much I guess. He was very, very angry.");
   choices = ["Give up", "Try the chimney"];
+  answer = setOptions(choices);
+  }
+
+function chimney(){
+  story("The wolf went up on the roof and tried to get into the house through the chimney. He climbed into the chimney and slid down into a pot of boiling water. He ran out of the house and never came back!");
+  choices = ["The End"];
   answer = setOptions(choices);
   }
 
