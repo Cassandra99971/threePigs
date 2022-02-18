@@ -30,6 +30,12 @@ function lazyPig(){
   answer = setOptions(choices);
 }
 
+function stupidPig(){
+  story("The second little pig worked harder than the first little pig. He made a house of twigs. The big bad wolf huffed and puffed and blew the house down.");
+  choices = ["Smart pig", "Funeral"];
+  answer = setOptions(choices);
+}
+
 // Places
 function thinkSomeMore() {
   story("You think about it some more and are sure this forest was not here yesterday.  \
