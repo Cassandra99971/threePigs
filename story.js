@@ -45,6 +45,12 @@ function smartPig(){
   answer = setOptions(choices);
 }
 
+function tauntWolf(){
+  story("The pig replied,\"Not by the hairs on my chinny chin chin!\" The wolf replied,\"Then I'll huff and I'll puff and I'll blow your house in!\" The wolf huffed and puffed.<br>But the house did not fall down. The wolf smoked too much I guess. He was very, very angry.");
+  choices = ["Give up", "Try the chimney"];
+  answer = setOptions(choices);
+  }
+
 // Places
 function thinkSomeMore() {
   story("You think about it some more and are sure this forest was not here yesterday.  \
