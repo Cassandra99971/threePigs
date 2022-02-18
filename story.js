@@ -2,28 +2,31 @@
 
 // variables
 // var name = "";
-var scene1=town;
+var scene1=openingScene;
 
 function checkAnswers(answer) {
   switch(answer) {
-    case "Think some more":
-      thinkSomeMore();
+    case "Lazy pig":
+      lazyPig();
       break;
-    case "go into the forest":
-      enterForest();
+    case "Stupid pig":
+      stupidPig();
       break;
-    case "ignore it and go home":
-      homeEarly();
+    case "Smart pig":
+      smartPig();
       break;
     }
 }
 
-function town(){
-  // var name = prompt("what is your name?");
-  story("One day you are on your way home from school and you hear a whisper coming from a dark forest you never remember seeing before.\
-  \n\"Come here Come here!\"\
-  \nit says. You can't place the voice, but there is something familiar about it. What do you do?");
-  choices = ["Think some more", "go into the forest", "ignore it and go home"];
+function openingScene(){
+  story("Once upon a time, there were three little pigs who decided to build houses near the woods and get out of the big city. But a big bad wolf lived in the woods.<br>He was not happy when he saw the three little pigs building houses nearby.");
+  choices = ["Lazy pig", "Stupid pig", "Smart pig"];
+  answer = setOptions(choices);
+}
+
+function lazyPig(){
+  story("The first little pig was lazy. He made a house of straw. The big bad wolf huffed and puffed and blew it down");
+  choices = ["Stupid pig", "Smart pig", "Funeral"];
   answer = setOptions(choices);
 }
 
