@@ -15,6 +15,9 @@ function checkAnswers(answer) {
     case "Smart pig":
       smartPig();
       break;
+    case "Taunt the wolf":
+      tauntWolf();
+      break;
     }
 }
 
@@ -33,6 +36,12 @@ function lazyPig(){
 function stupidPig(){
   story("The second little pig worked harder than the first little pig. He made a house of twigs. The big bad wolf huffed and puffed and blew the house down.");
   choices = ["Smart pig", "Funeral"];
+  answer = setOptions(choices);
+}
+
+function smartPig(){
+  story("The third little pig made a house of bricks.<br>The big bad wolf said \"Little Pig, Little Pig, Let Me In!\"");
+  choices = ["Taunt the wolf", "Let him in"];
   answer = setOptions(choices);
 }
 
